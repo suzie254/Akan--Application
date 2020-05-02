@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Akan Name Calculator</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h1 class="text-center text-white">Generate Your Akan Name</h1>
+                        <p class="text-center text-white">Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name <br> as a 'day name' which corresponds to the day in the week they were born.</p>
+
+                        <div class="container">
+                            <div class="col-md-12">
+                                <form class="form">
+                                    <div class="form-group row">
+                                        <label for="day-of-birth" class="col-sm-2 col-form-label text-white">Day</label>
+                                        <div class="col-sm-10">
+                                            <input type="number" class="form-control" id="day-of-birth" placeholder="Enter day only e.g 15" min="1" max="31">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="month-of-birth" class="col-sm-2 col-form-label text-white">Month</label>
+                                        <div class="col-sm-10">
+                                            <input type="number" class="form-control" id="month-of-birth" placeholder="Enter month only e.g 12" min="1" max="12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="year-of-birth" class="col-sm-2 col-form-label text-white">Year</label>
+                                        <div class="col-sm-10">
+                                            <input type="number" class="form-control" id="year-of-birth" placeholder="Enter year only e.g 1990" min="1900">
+                                        </div>
+                                    </div>
+                                    <fieldset class="form-group">
+                                        <div class="row">
+                                        <legend class="col-form-label col-sm-2 pt-0 text-white">Gender</legend>
+                                            <div class="col-sm-10">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="gender" id="males" value="male" checked>
+                                                    <label class="form-check-label text-white" for="males">
+                                                        Male
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="gender" value="female">
+                                                    <label class="form-check-label text-white" for="females">
+                                                        Female
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </fieldset>
+                                    <div class="form-group row">
+                                        <div class="col-sm-10">
+                                            <input type="submit" onclick="main()" value="Submit" class="btn btn-primary">
+                                            <input type="reset" value="Reset" class="btn btn-danger">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="answerArea">
+                                <!-- <h2 class="text-center text-white" id="answerArea">Answer shows here...</h2> -->
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="">
+            <div class="card-group">
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mars"></i>
+                    </div>
+                </div>
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h3 class="card-text">Male</h3>
+                        <ul class="card-text">
+                            <li>Sunday: Kwasi</li>
+                            <li>Monday: Kwadwo</li>
+                            <li>Tuesday: Kwabena</li>
+                            <li>Wednesday: Kwaku</li>
+                            <li>Thursday: Yaw</li>
+                            <li>Friday: Kofi</li>
+                            <li>Saturday: Kwame</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-success">
+                    <div class="card-body text-center">
+                        <i class="fas fa-venus"></i>
+                    </div>
+                </div>
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h3 class="card-text">Female</h3>
+                        <ul class="card-text">
+                            <li>Sunday: Akosua</li>
+                            <li>Monday: Adwoa</li>
+                            <li>Tuesday: Abenaa</li>
+                            <li>Wednesday: Akua</li>
+                            <li>Thursday:  Yaa</li>
+                            <li>Friday: Afua</li>
+                            <li>Saturday: Ama</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/script.js"></script>
+        <script src="https://kit.fontawesome.com/71daca51f7.js"></script>
+    </body>
+</html>
